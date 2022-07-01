@@ -90,8 +90,8 @@ export const NavBtn = styled.nav`
   display: flex;
   align-item: center;
   justify-content: center;
-  text-align: center;
 
+  align-items: center;
   padding: 10px 30px;
 
   @media screen and (max-width: 768px) {
@@ -111,6 +111,7 @@ export const NavBtnLink = styled(LinkR)`
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   text-decoration: none;
+  align-items: center;
 
   &:hover {
     transition: all 0.2s ease-in-out;
