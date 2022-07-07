@@ -25,7 +25,7 @@ export const InfoSection = ({
   description,
   buttonLabel,
   imgStart,
-  img,
+  imgSrc,
   alt,
   dark,
   primary,
@@ -59,7 +59,7 @@ export const InfoSection = ({
             </Column1>
             <Column2>
               <ImgWrap>
-                <Img src={img} alt={alt} />
+                <Img src={imgSrc} alt={alt} />
               </ImgWrap>
             </Column2>
           </InfoRow>
