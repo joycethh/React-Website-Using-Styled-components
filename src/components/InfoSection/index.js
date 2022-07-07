@@ -14,16 +14,22 @@ import {
   ImgWrap,
   Img,
 } from "./InfoElement";
-import imageSrc from "../../images/svg-transferMoney.svg";
+
 export const InfoSection = ({
-  lightBg,
   id,
-  imgStart,
+  lightBg,
   lightText,
-  darkText,
-  primary,
+  lightTextDesc,
+  topLine,
+  headLine,
+  description,
+  buttonLabel,
+  imgStart,
+  img,
+  alt,
   dark,
-  dark2,
+  primary,
+  darkText,
 }) => {
   return (
     <>
@@ -33,13 +39,8 @@ export const InfoSection = ({
             <Column1>
               <TextWrapper>
                 <Topline>{topLine}</Topline>
-                <Heading lightText={lightText}>
-                  Unlimted Transactions with zero fees
-                </Heading>
-                <Subtitle darkText={darkText}>
-                  Get acesss to our exclusive app that allows you to send
-                  unlimited transactions without getting charged any fees.
-                </Subtitle>
+                <Heading lightText={lightText}>{headLine}</Heading>
+                <Subtitle darkText={darkText}>{description}</Subtitle>
                 <BtnWrap>
                   <Button
                     to="home"
@@ -50,16 +51,15 @@ export const InfoSection = ({
                     offset={-80}
                     primary={primary ? 1 : 0}
                     dark={dark ? 1 : 0}
-                    dark2={dark2 ? 1 : 0}
                   >
-                    Get Started
+                    {buttonLabel}
                   </Button>
                 </BtnWrap>
               </TextWrapper>
             </Column1>
             <Column2>
               <ImgWrap>
-                <Img src={imageSrc} alt="svg" />
+                <Img src={img} alt={alt} />
               </ImgWrap>
             </Column2>
           </InfoRow>
