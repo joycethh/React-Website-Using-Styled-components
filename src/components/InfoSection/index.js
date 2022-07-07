@@ -14,26 +14,31 @@ import {
   ImgWrap,
   Img,
 } from "./InfoElement";
-export const InfoSection = () => {
+import imageSrc from "../../images/svg-transferMoney.svg";
+export const InfoSection = ({ lightBg, id, imgStart, lightText, darkText }) => {
   return (
     <>
-      <InfoContainer>
+      <InfoContainer lightBg={lightBg} id={id}>
         <InfoWrapper>
-          <InfoRow>
+          <InfoRow imgStart={imgStart}>
             <Column1>
               <TextWrapper>
-                <Topline>
-                  <Heading>Heading</Heading>
-                  <Subtitle>Subtitle</Subtitle>
-                  <BtnWrap>
-                    <Button to="home">Home</Button>
-                  </BtnWrap>
-                </Topline>
+                <Topline>Premium Bank</Topline>
+                <Heading lightText={lightText}>
+                  Unlimted Transactions with zero fees
+                </Heading>
+                <Subtitle darkText={darkText}>
+                  Get acesss to our exclusive app that allows you to send
+                  unlimited transactions without getting charged any fees.
+                </Subtitle>
+                <BtnWrap>
+                  <Button to="home">Get Started</Button>
+                </BtnWrap>
               </TextWrapper>
             </Column1>
             <Column2>
               <ImgWrap>
-                <Img />
+                <Img src={imageSrc} alt="svg" />
               </ImgWrap>
             </Column2>
           </InfoRow>
