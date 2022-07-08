@@ -30,7 +30,7 @@ function Navbar({ toggle }) {
               <NavLinks to="discover">Discover</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="Service">Service</NavLinks>
+              <NavLinks to="service">Service</NavLinks>
             </NavItem>
             <NavItem>
               <NavLinks to="signup">Sign Up</NavLinks>
