@@ -9,6 +9,7 @@ import {
   homeObjTwo,
   homeObjThree,
 } from "../components/InfoSection/Data";
+import { FooterSection } from "../components/Footer";
 
 function Home() {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,12 +21,16 @@ function Home() {
     <>
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle} />
+
       <HeroSection />
 
       <InfoSection {...homeObjOne} />
       <InfoSection {...homeObjTwo} />
+
       <Service />
+
       <InfoSection {...homeObjThree} />
+      <FooterSection />
     </>
   );
 }
