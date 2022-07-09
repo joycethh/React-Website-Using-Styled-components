@@ -10,7 +10,7 @@ import {
   ArrowForward,
   ArrowRight,
 } from "./HeroElement";
-import Video from "../../videos/video.mp4";
+import Video from "../../video.mp4";
 import { Button } from "../ButtonElements";
 const HeroSection = () => {
   const [hover, setHover] = useState(false);
